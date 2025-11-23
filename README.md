@@ -109,5 +109,3 @@ direction LR
 
     AIPlayer --> Pyramid
     AIPlayer --> RaceTrack
-
-    TheGame ..> AvatarScreen : "subprocess: java AvatarScreen"
