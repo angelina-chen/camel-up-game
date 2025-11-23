@@ -1,5 +1,5 @@
 # camel-up-game
-Updated from private repository
+Updated from private repository.
 
 A console-based implementation of *Camel Up* with Python game logic, Monte Carlo simulation for AI betting hints, and a small Java console UI module for player avatars.
 
