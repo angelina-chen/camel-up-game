@@ -102,5 +102,5 @@ direction LR
     BettingTicketHolder --> BettingTicket
 
     %% External Java Integration
-    TheGame ..> AvatarScreen : calls via subprocess\n(java AvatarScreen)
+    TheGame ..> AvatarScreen 
 
