@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+
+# Environment variables
+.env
+*.env
+
+# macOS junk
+.DS_Store
+
+# IDE stuff
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Java build artifacts
+*.class
+target/
+bin/
+build/
