@@ -9,6 +9,7 @@ from BettingTicketHolder import BettingTicketHolder
 from CamelPlayer import CamelPlayer
 from Pyramid import Pyramid
 from RaceTrack import RaceTrack
+import subprocess
 
 colorama.just_fix_windows_console()
 
@@ -228,6 +229,12 @@ class TheGame:
 
         self.players = [CamelPlayer(name) for name in player_names]
         self.all_players = self.players.copy()
+
+        try:
+            subprocess.run(["java", "AvatarScreen", *player_names], check=False)
+        except FileNotFoundError:
+        # Java or AvatarScreen not available; fail silently
+            pass
 
         # Shuffle turn order
         random.shuffle(self.players)
